@@ -65,14 +65,21 @@ body{background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothi
   .header-inner{padding:12px}
   .brand{font-size:18px}
 }
-.logo {
-  height: 50px; /* Define a altura do logo */
-  width: 50px;  /* Define a largura igual à altura, forçando um quadrado */
-  border-radius: 50%; /* Esta é a linha que cria o círculo */
-  object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
-}
 
 .brand {
+  /* ESTILOS FINAIS PARA O LOGO E CABEÇALHO */
+.brand {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o logo e o texto */
+  gap: 15px; /* Espaço entre o logo e o texto */
+}
+
+.logo {
+  height: 45px; /* Altura do círculo */
+  width: 45px;  /* Largura do círculo (precisa ser igual à altura) */
+  border-radius: 50%; /* A mágica que cria o círculo */
+  object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+}
   display: flex;
   align-items: center;
   gap: 15px; /* Cria um espaço entre o logo e o texto */
