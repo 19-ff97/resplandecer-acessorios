@@ -65,3 +65,15 @@ body{background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothi
   .header-inner{padding:12px}
   .brand{font-size:18px}
 }
+.logo {
+  height: 50px; /* Define a altura do logo */
+  width: 50px;  /* Define a largura igual à altura, forçando um quadrado */
+  border-radius: 50%; /* Esta é a linha que cria o círculo */
+  object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Cria um espaço entre o logo e o texto */
+}
