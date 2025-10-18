@@ -1,6 +1,6 @@
 /* styles.css - Resplandecer Acessórios */
 :root{
-  --bg:#5e636d; /* cinza escuro */
+  --bg:#dfe6f5; /* cinza escuro */
   --white:#ffffff;
   --accent:#cfd8dc; /* tom prateado claro */
   --text:#111827;
@@ -16,7 +16,7 @@ body{background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothi
 .site-header{background:var(--white);border-bottom:1px solid #e6e9ee;position:sticky;top:0;z-index:10}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
 .brand{font-size:20px;letter-spacing:0.2px}
-.brand span{font-weight:700;color:#2f4f4f}
+.brand span{font-weight:700;color:#8c9898}
 
 .nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600;font-size:14px}
 
