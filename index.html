@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resplandecer Acessórios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Resplandecer <span>Acessórios</span></h1>
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h2>Brilhe com autenticidade</h2>
+        <p>Acessórios em prata e peças selecionadas com design minimalista para homens e mulheres.</p>
+        <a class="cta" href="#catalogo">Ver Produtos</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-sample.jpg" alt="Peças de prata - Resplandecer Acessórios">
+      </div>
+    </section>
+
+    <section id="catalogo" class="container catalogo">
+      <h3>Catálogo</h3>
+      <p class="sub">Peças em destaque — clique em um produto para ver a simulação de compra.</p>
+      <div class="grid">
+        <!-- Produto 1 -->
+        <article class="card">
+          <img src="assets/prod1.jpg" alt="Pulseira Masculina de Prata">
+          <h4>Pulseira Masculina de Prata</h4>
+          <p class="price">R$ 179,90</p>
+          <p class="desc">Pulseira em prata 925 com acabamento escovado. Tamanhos M/L.</p>
+          <div class="actions">
+            <button class="buy" data-id="1">Comprar (simulação)</button>
+            <button class="whats" data-name="Pulseira Masculina de Prata">WhatsApp</button>
+          </div>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="card">
+          <img src="assets/prod2.jpg" alt="Anel Feminino Coração">
+          <h4>Anel Feminino Coração</h4>
+          <p class="price">R$ 99,90</p>
+          <p class="desc">Anel delicado em prata com detalhe de coração.</p>
+          <div class="actions">
+            <button class="buy" data-id="2">Comprar (simulação)</button>
+            <button class="whats" data-name="Anel Feminino Coração">WhatsApp</button>
+          </div>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="card">
+          <img src="assets/prod3.jpg" alt="Colar Minimalista">
+          <h4>Colar Minimalista</h4>
+          <p class="price">R$ 129,90</p>
+          <p class="desc">Colar em corrente fina de prata, perfeito para usar todo dia.</p>
+          <div class="actions">
+            <button class="buy" data-id="3">Comprar (simulação)</button>
+            <button class="whats" data-name="Colar Minimalista">WhatsApp</button>
+          </div>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="card">
+          <img src="assets/prod4.jpg" alt="Brinco Argola Pequena">
+          <h4>Brinco Argola Pequena</h4>
+          <p class="price">R$ 69,90</p>
+          <p class="desc">Argola em prata 925, acabamento polido.</p>
+          <div class="actions">
+            <button class="buy" data-id="4">Comprar (simulação)</button>
+            <button class="whats" data-name="Brinco Argola Pequena">WhatsApp</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="container sobre">
+      <h3>Sobre a Resplandecer</h3>
+      <p>Resplandecer Acessórios nasceu da ideia de valorizar momentos simples com peças que refletem personalidade. 
+      Trabalhamos com prata 925 e materiais selecionados, trazendo design minimalista e atenção aos detalhes.</p>
+      <p>Loja criada por <strong>Resplandecer Acessórios</strong> — contato rápido via WhatsApp.</p>
+    </section>
+
+    <section id="contato" class="container contato">
+      <h3>Contato</h3>
+      <p>Para dúvidas ou pedidos especiais, fale conosco via WhatsApp:</p>
+      <a class="whatsapp-link" href="https://wa.me/5511959752095" target="_blank">+55 11 95975-2095</a>
+      <p class="small">Você também pode nos seguir nas redes sociais (adicionar seus links).</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Resplandecer Acessórios — Feito com atenção.</p>
+    </div>
+  </footer>
+
+  <!-- Modal de compra (simulado) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">×</button>
+      <h4 id="modalTitle">Simulação de Compra</h4>
+      <p id="modalDesc">Preço: <span id="modalPrice">R$ 0,00</span></p>
+      <div class="payment-options">
+        <p>Métodos de pagamento (simulação):</p>
+        <button class="mp-btn" id="mp-pix">Pagar com Pix (simulado)</button>
+        <button class="mp-btn" id="mp-card">Pagar com Cartão (simulado)</button>
+        <button class="mp-btn" id="mp-boleto">Gerar Boleto (simulado)</button>
+      </div>
+      <p class="note">OBS: Pagamentos estão simulados. Para ativar pagamentos reais, conecte sua conta Mercado Pago (instruções no README).</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

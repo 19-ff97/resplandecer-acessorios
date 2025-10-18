@@ -1,0 +1,67 @@
+/* styles.css - Resplandecer Acessórios */
+:root{
+  --bg:#f3f4f6; /* cinza claro */
+  --white:#ffffff;
+  --accent:#cfd8dc; /* tom prateado claro */
+  --text:#111827;
+  --muted:#6b7280;
+  --card-shadow: 0 6px 18px rgba(17,24,39,0.06);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+
+.site-header{background:var(--white);border-bottom:1px solid #e6e9ee;position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+.brand{font-size:20px;letter-spacing:0.2px}
+.brand span{font-weight:700;color:#2f4f4f}
+
+.nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-weight:600;font-size:14px}
+
+.hero{display:flex;gap:24px;align-items:center;padding:40px 24px}
+.hero-text{flex:1}
+.hero-text h2{font-size:28px;margin-bottom:8px}
+.hero-text p{color:var(--muted);margin-bottom:16px}
+.cta{display:inline-block;background:var(--white);border:1px solid var(--accent);padding:10px 16px;border-radius:8px;text-decoration:none;color:var(--text);font-weight:700}
+
+.hero-image img{width:300px;max-width:40vw;border-radius:8px;box-shadow:var(--card-shadow)}
+
+/* catálogo */
+.catalogo h3{font-size:22px;margin-bottom:8px}
+.sub{color:var(--muted);margin-bottom:18px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+
+.card{background:var(--white);padding:14px;border-radius:10px;box-shadow:var(--card-shadow);display:flex;flex-direction:column;align-items:flex-start}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+.card h4{font-size:16px;margin-bottom:6px}
+.price{font-weight:700;margin-bottom:6px}
+.desc{color:var(--muted);font-size:13px;margin-bottom:8px}
+.actions{margin-top:auto;width:100%;display:flex;gap:8px}
+.buy{flex:1;padding:10px;border-radius:8px;border:1px solid #d1d5db;background:#f8fafc;font-weight:700;cursor:pointer}
+.whats{padding:10px;border-radius:8px;border:1px solid #cbd5e1;background:#fff;cursor:pointer}
+
+/* sobre e contato */
+.sobre, .contato{background:var(--white);padding:20px;border-radius:10px;box-shadow:var(--card-shadow);margin-top:18px}
+
+/* footer */
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);margin-top:18px}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(2,6,23,0.5);display:none;align-items:center;justify-content:center;padding:24px}
+.modal[aria-hidden="false"]{display:flex}
+.modal-content{background:var(--white);padding:18px;border-radius:10px;max-width:520px;width:100%;box-shadow:var(--card-shadow)}
+.close{float:right;border:none;background:none;font-size:22px;cursor:pointer}
+
+.payment-options{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.mp-btn{padding:10px;border-radius:8px;border:1px solid #e2e8f0;background:#f8fafc;cursor:pointer}
+
+/* small screens */
+@media (max-width:720px){
+  .hero{flex-direction:column}
+  .hero-image img{max-width:90%}
+  .header-inner{padding:12px}
+  .brand{font-size:18px}
+}
